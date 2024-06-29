@@ -1,0 +1,75 @@
+body {
+    font-family: dm sans, sans-serif;
+    background-image:url("guidance.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.pink-box {
+    background-color: #ffb6c1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: right; /* Align content to the right */
+}
+
+.footer-container p {
+    margin: 0;
+    color: white;
+}
+
+.footer-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}

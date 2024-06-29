@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenatal Nurture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Features</a>
+                        <div class="dropdown-content">
+                            <a href="#exercise">Exercise Routines</a>
+                            <a href="guidance.html">Nutritional Guidance</a>
+                            <a href="appointment.html">Appointment Reminders</a>
+                            <a href="#do-donts">Do's and Don'ts</a>
+                        </div>
+                    </li>
+                    <li><a href="#About us">About Us</a></li>
+                    <li><a href="#Contact us">Contact Us</a></li>
+                    <li><a href="#locator">Nearby Gynecologist</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Custom image section -->
+        <section id="custom-image">
+            <div class="container">
+                <div class="welcome-box" id="Home">
+                    <h2>Pregnancy is a life changing journey!</h2>
+                    <p>Enjoy this journey with nurturing yourself and self care.</p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="custom_image.jpg" alt="Custom Image" class="fade-in-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Rest of the sections -->
+        <section id="exercise">
+            <div class="container">
+                <div class="exercise pregnancy-routine">
+                    <div class="pink-box">
+                        <h2>Pregnancy Exercise Routines</h2>
+                    </div>
+                </div>
+                <div class="exercise">
+                    <img src="Cardiovascular.jpg" alt="Cardiovascular Exercise">
+                    <h3>Cardiovascular Exercise</h3>
+                    <p>Aerobic exercises like walking, swimming, or cycling can improve heart health and stamina.</p>
+                    <a href="Cardiovascular Exercise.html" target="_blank">Learn More</a>
+                </div>
+                <div class="exercise">
+                    <img src="strength.jpg" alt="Strength Training">
+                    <h3>Strength Training</h3>
+                    <p>Strength exercises using body weight or light weights help maintain muscle strength and tone.</p>
+                    <a href="strength.html" target="_blank">Learn More</a>
+                </div>
+                <div class="exercise">
+                    <img src="flex.jpg" alt="Flexibility and Stretching">
+                    <h3>Flexibility and Stretching</h3>
+                    <p>Include gentle stretches to improve flexibility and reduce muscle tension. Focus on stretching major muscle groups such as your hamstrings, quadriceps, calves, chest, back, and shoulders.</p>
+                    <a href="flexiblity.html" target="_blank">Learn More</a>
+                </div>
+                <div class="exercise">
+                    <img src="pelvic.jpg" alt="Pelvic Floor Exercises (Kegels)">
+                    <h3>Pelvic Floor Exercises (Kegels)</h3>
+                    <p>Pelvic floor exercises help strengthen the muscles that support your bladder, uterus, and bowels. To perform Kegels, contract your pelvic floor muscles as if you're trying to stop the flow of urine, hold for a few seconds, then release.</p>
+                    <a href="hello.html" target="_blank">Learn More</a>
+                </div>
+                <!-- Add more exercise routines -->
+            </div>
+        </section>
+
+        <section id="locator">
+            <div class="container pink-box2">
+                <h2>🔍 Nearby Gynecologist Locator</h2>
+                <!-- Placeholder content for the locator -->
+                <a href="https://www.google.com/maps/search/gynecologist+near+me/@28.704709,77.1466894,13z/data=!3m1!4b1?entry=ttu" target="_blank" class="map-link">Find Now</a>
+            </div>
+        </section>
+
+        <section id="do-donts">
+            <img src="question.png" alt="Icon">
+            <div class="ph-container">
+                <h2 class="ph-center">Dos and Don'ts for Pregnant Women</h2>
+                <div class="ph-questions">
+                    <div class="ph-dropdown">
+                        <button class="ph-dropbtn">Select a Question</button>
+                        <div class="ph-dropdown-content">
+                            <a href="#" onclick="showAnswer('avoid'); return false;">What foods should I avoid during pregnancy?</a>
+                            <a href="#" onclick="showAnswer('exercise'); return false;">Is it safe to exercise during pregnancy?</a>
+                            <a href="#" onclick="showAnswer('travel'); return false;">Can I travel while pregnant?</a>
+                            <a href="#" onclick="showAnswer('alcohol'); return false;">Can I drink alcohol during Pregnancy?</a>
+                            <a href="#" onclick="showAnswer('medications'); return false;">Is it safe for me to take medications?</a>
+                            <a href="#" onclick="showAnswer('caffeine'); return false;">Should I avoid caffeine?</a>
+                            <a href="#" onclick="showAnswer('heavy'); return false;">Can I lift heavy objects?</a>
+                            <a href="#" onclick="showAnswer('checkup'); return false;">Should I attend regular prenatal check-ups?</a>
+                            <a href="#" onclick="showAnswer('dye'); return false;">Can I dye my hair?</a>
+                            <!-- Add more questions as needed -->
+                        </div>
+                    </div>
+                    <div class="ph-ask">
+                        <input type="text" id="questionInput" placeholder="Ask Your Question">
+                        <button onclick="submitQuestion()">Submit</button>
+                    </div>
+                </div>
+                <div id="answer"></div>
+            </div>
+        </section>
+
+        <section id="About us">
+            <div class="about-section">
+                <div class="container2">
+                    <h2>About Us</h2>
+                    <p>Welcome to Prenatal Nurture, your trusted companion on the journey through pregnancy and motherhood. Our mission is to empower and support expecting mothers with reliable information, expert guidance, and a nurturing community every step of the way.</p>
+                    <p>At Prenatal Nurture, we understand that pregnancy is a transformative experience, filled with excitement, joy, and sometimes, uncertainty. That's why we've curated a comprehensive resource hub designed to address the diverse needs and concerns of mothers-to-be.</p>
+                    <p>Our team consists of passionate healthcare professionals, experienced mothers, and knowledgeable experts in various fields related to pregnancy and childbirth. With our collective expertise, we aim to provide you with the most up-to-date and evidence-based information on topics ranging from prenatal nutrition and fitness to labor and delivery preparation.</p>
+                    <p>Thank you for choosing Prenatal Nurture as your companion on this extraordinary journey. Together, let's embrace the magic of pregnancy and embark on the path to motherhood with confidence, knowledge, and unwavering support.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <section id="Contact us">
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2024 Prenatal Nurture. All rights reserved. &nbsp;<a href="tel:123-456-7890">Customer Care: 123-456-7890</a> | <a href="mailto:info@prenatalnurture.com">Email: info@prenatalnurture.com</a></p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Popup chat button and window -->
+    <div class="chat-popup" id="chat-popup">
+        <div class="chat-popup-header">
+            <h2>Prenatal Health Support</h2>
+            <button id="close-chat">x</button>
+        </div>
+        <div class="chat-container" id="chat-container">
+            <div class="chat-box" id="chat-box">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <button class="chat-button" id="open-chat">💬</button>
+
+    <script>
+        document.getElementById('send-button').addEventListener('click', sendMessage);
+        document.getElementById('chat-input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        const predefinedResponses = [
+            "It's important to take care of your mental health during pregnancy. Make sure to talk to your doctor about any concerns.",
+            "Getting plenty of rest and staying hydrated are key to maintaining good mental health.",
+            "Don't hesitate to reach out to friends and family for support.",
+            "Taking short walks can help lift your mood.",
+            "Consider practicing mindfulness or meditation to reduce stress.",
+            "Remember, it's okay to ask for help if you're feeling overwhelmed.",
+            "Eating a balanced diet can positively impact your mental well-being.",
+            "Engage in activities that you enjoy and that make you feel relaxed.",
+            "Keeping a journal of your thoughts and feelings can be therapeutic.",
+            "Try to maintain a positive outlook and focus on the joy of expecting your baby.",
+            "It's completely normal to have mixed emotions during pregnancy.",
+            "Joining a support group for pregnant women can provide comfort and camaraderie.",
+            "If you experience persistent sadness or anxiety, consult with your healthcare provider.",
+            "Taking time for yourself is important. Self-care is not selfish.",
+            "Listening to your favorite music can be a great way to relax.",
+            "Avoid comparing your pregnancy journey to others'. Everyone's experience is unique.",
+            "Stay informed, but try not to overwhelm yourself with too much information.",
+            "Trust your instincts and don't be afraid to voice your concerns.",
+            "Pregnancy yoga can be a gentle way to stay active and reduce stress.",
+            "Celebrate small milestones and progress throughout your pregnancy."
+        ];
+
+        const greetingResponses = [
+            "Hello! How can I support you today?",
+            "Hi there! How are you feeling?",
+            "Hello! What’s on your mind?"
+        ];
+
+        const questions = {
+            "how are you": "I'm just a bot, but I'm here to help you. How are you feeling?",
+            "how are you feeling": "I'm just a bot, but I'm here to help you. How are you feeling?",
+            "what is your name": "I'm your Prenatal Health Support chatbot. How can I assist you today?",
+            "who are you": "I'm your Prenatal Health Support chatbot. How can I assist you today?",
+            "can you help me": "Of course! I'm here to support you. What do you need help with?",
+            "thank you": "You're welcome! If you have any other questions or need support, feel free to ask."
+        };
+
+        function sendMessage() {
+            const chatInput = document.getElementById('chat-input');
+            const message = chatInput.value.trim().toLowerCase();
+            if (message) {
+                appendMessage('user', message);
+                chatInput.value = '';
+                getBotResponse(message);
+            }
+        }
+
+        function appendMessage(sender, message) {
+            const chatBox = document.getElementById('chat-box');
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', sender);
+            messageElement.innerText = message;
+            chatBox.appendChild(messageElement);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function getBotResponse(userMessage) {
+            let botMessage = "";
+
+            if (userMessage in questions) {
+                botMessage = questions[userMessage];
+            } else if (userMessage.includes("hello") || userMessage.includes("hi")) {
+                botMessage = greetingResponses[Math.floor(Math.random() * greetingResponses.length)];
+            } else {
+                botMessage = predefinedResponses[Math.floor(Math.random() * predefinedResponses.length)];
+            }
+
+            appendMessage('bot', botMessage);
+        }
+
+        // Popup chat functionality
+        const chatPopup = document.getElementById('chat-popup');
+        const openChatButton = document.getElementById('open-chat');
+        const closeChatButton = document.getElementById('close-chat');
+
+        openChatButton.addEventListener('click', () => {
+            chatPopup.style.display = 'block';
+        });
+
+        closeChatButton.addEventListener('click', () => {
+            chatPopup.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
